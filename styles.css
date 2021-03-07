@@ -1,0 +1,26 @@
+#inputFields {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#inputFields td, #inputFields th {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+#inputFields tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+#inputFields tr:hover {
+    background-color: #ddd;
+}
+
+#inputFields th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ACAF50;
+    color: white;
+}

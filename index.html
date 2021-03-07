@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabajo Práctico 2</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body>
+        <table id="inputFields">
+            <tr>
+                <th>Tipo de input</th>
+                <th>Ejemplo</th>
+                <th>Descripción/función</th>
+            </tr>
+            <tr>
+                <td>Semana</td>
+                <td>
+                    <form>
+                        <label>Elija una semana:</label><br />
+                        <input type="week" id="week" name="week" />
+                    </form>
+                </td>
+                <td>
+                    Permite al usuario seleccionar una semana y un año. Aparece un selector de fecha al ingresar al campo de entrada.<br />
+                    No es compatible con Firefox, Safari o Internet Explorer 11 (o versiones anteriores).
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>
+                    URL
+                </td>
+                <td>
+                    <form>
+                        <label for="url">Ingrese su perfil de GitHub:</label>
+                        <input type="url" id="url" name="url" />
+                        <input type="submit" value="Enviar">
+                    </form>
+                </td>
+                <td>
+                    Se usa para campos de entrada que deben contener una dirección URL. Dependiendo de la compatibilidad del navegador, el campo de URL se puede validar automáticamente cuando se envía. Algunos smartphones reconocen el tipo de URL y agregan ".com" al teclado para que coincida con la entrada de URL.
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    Tiempo
+                </td>
+                <td>
+                    <form>
+                        <label for="time">Elija un momento del día:</label>
+                        <input type="time" id="time" name="time" />
+                    </form>
+                </td>
+                <td>
+                    Permite al usuario seleccionar una hora (sin zona horaria): si el navegador lo admite, aparece un selector de hora al ingresar al campo de entrada. No es compatible con Safari o Internet Explorer 12 (o versiones anteriores).
+                </td>
+            </tr>
+            
+
+            <tr>
+                <td>
+                    Rango
+                </td>
+                <td>
+                    <form>
+                        <label for="vol">Elija el volumen:</label>
+                        <input type="range" id="vol" name="vol" min="0" max="50"/>
+                    </form>
+                </td>
+                <td>
+                    Define un control para ingresar un número cuyo valor exacto no es importante (como un control deslizante). El rango predeterminado es de 0 a 100. Sin embargo, puede establecer restricciones sobre los números que se aceptan con los atributos min, max y step:
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    Número
+                </td>
+                <td>
+                    <form>
+                        <label for="quantity">Ingrese un número entre el 1 y el 5:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="5" />
+                        <input type="submit" value="Enviar">
+                    </form>
+                </td>
+                <td>
+                    Permite definir un campo de entrada numérico. Se pueden usar los atributos mínimo y máximo para agregar restricciones numéricas en el campo de entrada:
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>
+                    Mes
+                </td>
+                <td>
+                    <form>
+                        <label for="bdmonth">Ingrese el año y el mes de su cumpleaños:</label>
+                        <input type="month" id="bdmonth" name="bdmonth" />
+                        <input type="submit" value="Enviar">
+                    </form>
+                </td>
+                <td>
+                    Permite al usuario seleccionar un mes y un año.
+                    No es compatible con Firefox, Safari o Internet Explorer 11 (o versiones anteriores).
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>
+                    Fecha local
+                </td>
+                <td>
+                    <form>
+                        <label for="exact">Ingrese un momento exacto:</label>
+                        <input type="datetime-local" id="exact" name="exact" />
+                        <input type="submit" value="Enviar">
+                    </form>
+                </td>
+                <td>
+                    Especifica un campo de entrada de fecha y hora, sin zona horaria. No es compatible con Firefox, Safari o Internet Explorer 12 (o anterior).
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>
+                    Color
+                </td>
+                <td>
+                    <form>
+                        <label for="favcolor">Eija su color favorito:</label>
+                        <input type="color" id="favcolor" name="favcolor" />
+                        <input type="submit" value="Enviar">
+                    </form>
+                </td>
+                <td>
+                    Se utiliza para campos de entrada que deben contener un color. No es compatible con Internet Explorer 11 o Safari 9.1 (o versiones anteriores).
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
